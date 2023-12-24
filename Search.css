@@ -1,0 +1,125 @@
+.quick-links a{
+   text-decoration: none;
+   
+}
+.quick-links ul{
+    list-style:none;
+}
+
+/* search container styling */
+
+.search-container.hide{
+    opacity:0;
+    pointer-events: none;
+}
+
+.backgroud{
+    background-color: rgba(25, 25, 25, 0.9);
+    width: 100vw;
+    height: 50vh;
+} 
+.search-container{
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 6vh;
+
+    position: fixed;
+    top: 6vh;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background-color: rgba(25, 25, 25, 0.9);
+}
+
+.search-container .search{
+    position: absolute;
+    left: 12px;
+    opacity: 0.5;
+    
+}
+
+.search-container .link-close{
+    position: absolute;
+    top: 0;
+    right: 12px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 400ms;
+}
+.search-container .link-close:hover{
+    opacity: 0.8;
+}
+
+.search-container form{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.search-container form input{
+    width: 100%;
+    height: 44px;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-family: "Inter",sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.link-close{
+    background: url('images/close-icon.svg') ;
+    display: block;
+    background-position: center ;
+    height: 44px;
+    width: 16px;
+    background-repeat: no-repeat;
+}
+
+
+.overlay.show{
+    position: fixed;
+    background-color: rgba(25, 25, 25, 0.4);
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.search-container .quick-links{
+    background-color: rgba(25, 25, 25, 0.9);
+    position: absolute;
+    /* top:7vh; */
+    left: 0;right: 0;
+    padding: 16px 8px;
+    border-radius: 0 0 16px 16px;
+}
+
+.search-container .quick-links h2{
+    font-size: 15px;
+    color: #6e6e73; 
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.search-container .quick-links ul{
+    list-style: none;
+    margin: 0 32px;
+    margin-top: 12px;
+}
+
+.quick-links ul li a{
+    display: inline-block;
+    padding: 8px 0;
+    width: 100%;
+    font:bold;
+    font-size: 14px;
+    color:#fff;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.quick-links ul li a:hover {
+    opacity: 1;
+}
