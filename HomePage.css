@@ -1,0 +1,19 @@
+.homescreen {
+    background:url('homescreen.png');
+    /* width: 100%;
+    height: 100%;
+   
+    position: fixed; */
+    margin-top: 6vh;
+    background-size: cover;
+    height: 100vw;
+    
+}
+
+/* @media (max-width:832)
+{
+    .homescreen{
+        width:100%;
+        height: auto;
+    }
+} */
